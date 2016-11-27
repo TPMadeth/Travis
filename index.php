@@ -5,7 +5,7 @@
 				Cet indicateur est calculé à partir de plusieurs données issues de votre forum.
 			</p>
 			<p>
-				<?php include("./rechercheListeDesForums.php"); ?>
+				<?php include("./rechercheListeDesCours.php"); ?>
 			</p>
 		</div>
 <?php include("./pieddepage.php"); ?>

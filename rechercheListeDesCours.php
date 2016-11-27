@@ -14,19 +14,21 @@ if (!$cours)
 }
 else
 { ?>
-	<label for="listeCours">Sélectionnez votre cours<label>
-    <select name="listeCours" id="listeCours">
-		<?php
-		do
-		{ 
-			$idCours = substr($cours['Attribut'], 8);
-		?>
-			<option value="monCour"><?php echo $idCours;?></option>
-		<?php 
-		}
-		while ($cours = $req->fetch())
-		?>
-    </select>
+	<form action="rechercheInfosSurLeCour.php" method="post">
+		<label for="listeCours">Sélectionnez votre cours<label>
+		<select name="listeCours" id="listeCours">
+			<?php
+			do
+			{ 
+			?>
+				<option value="<?php echo $cours['Attribut']; ?>"><?php echo $cours['Attribut'];?></option>
+			<?php 
+			}
+			while ($cours = $req->fetch())
+			?>
+		</select>
+		<input type="submit" value="valider" name="OK">
+	</form>
 <?php
 }
 ?>
