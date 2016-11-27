@@ -14,7 +14,7 @@ if (!$cours)
 }
 else
 { ?>
-	<form action="rechercheInfosSurLeCour.php" method="post">
+	<form action="infosSurLeCour.php" method="post">
 		<label for="listeCours">Sélectionnez votre cours<label>
 		<select name="listeCours" id="listeCours">
 			<?php
