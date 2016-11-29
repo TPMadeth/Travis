@@ -24,12 +24,43 @@ $graph = new PieGraph(200,200);
 //$graph->SetTheme(new $theme_class());
 
 // Set A title for the plot
+$graph->title->Set("Total");
+$graph->SetBox(true);
+
+// Create
+$p1 = new PiePlot($data);
+$p1->value->SetColor('white','darkred');
+$graph->Add($p1);
+$p1->SetSliceColors(array($indicateurTotal));
+
+@unlink("graphtotal.png");
+//$graph->Stroke();
+$graph->Stroke("graphtotal.png");
+echo "<img src='graphtotal.png' />";
+?>
+
+
+
+<p>
+</p>
+
+<?php
+// Some data
+$data = array($pourcentageLecture);
+
+$graph = new PieGraph(100,100);
+
+//$theme_class="DefaultTheme";
+//$graph->SetTheme(new $theme_class());
+
+// Set A title for the plot
 $graph->title->Set("Lecture");
 $graph->SetBox(true);
 
 // Create
 $p1 = new PiePlot($data);
 $p1->value->HideZero(true);
+$p1->value->SetColor('white','darkred');
 $graph->Add($p1);
 $p1->SetSliceColors(array($indicateurLecture));
 
@@ -45,7 +76,7 @@ echo "<img src='graph.png' />";
 // Some data
 $data = array($pourcentageParticipation);
 
-$graph = new PieGraph(200,200);
+$graph = new PieGraph(100,100);
 
 $theme_class="DefaultTheme";
 //$graph->SetTheme(new $theme_class());
@@ -56,8 +87,8 @@ $graph->SetBox(true);
 
 // Create
 $p1 = new PiePlot($data);
+$p1->value->SetColor('white','darkred');
 $graph->Add($p1);
-
 $p1->ShowBorder();
 $p1->SetColor('black');
 $p1->SetSliceColors(array($indicateurParticipation));
@@ -73,7 +104,7 @@ echo "<img src='graph2.png' />";
 // Some data
 $data = array($pourcentageParticipation);
 
-$graph = new PieGraph(200,200);
+$graph = new PieGraph(100,100);
 
 $theme_class="DefaultTheme";
 //$graph->SetTheme(new $theme_class());
@@ -84,8 +115,8 @@ $graph->SetBox(true);
 
 // Create
 $p1 = new PiePlot($data);
+$p1->value->SetColor('white','darkred');
 $graph->Add($p1);
-
 $p1->ShowBorder();
 $p1->SetColor('black');
 $p1->SetSliceColors(array($indicateurComplement));
@@ -106,7 +137,7 @@ echo "<img src='graph3.png' />";
  $datay=array($nbAccesCours[0],$nbScroll[0],$nbScrollBas[0]);
  
 // Size of graph
-$width=250;
+$width=350;
 $height=150;
 
 $barcolors = array($indicateurLecture);
@@ -161,7 +192,7 @@ echo "<img src='graph4.png' />";
  $datay=array($nbAccesCours[0],$nbMessages[0]);
  
 // Size of graph
-$width=250;
+$width=350;
 $height=150;
 
 $barcolors = array($indicateurParticipation);
@@ -214,7 +245,7 @@ echo "<img src='graph5.png' />";
  $datay=array($nbAccesCours[0],$nbFichierUpload[0],$nbFichierDownload[0]);
  
 // Size of graph
-$width=250;
+$width=350;
 $height=150;
 
 $barcolors = array($indicateurComplement);
@@ -262,14 +293,14 @@ echo "<img src='graph6.png' />";
 
 
 
-
+<!--
 	<p>
-		<?php
+		< ?php
 		echo("Il y a eu ".$nbConnexion[0]." connexions sur votre site.");
 		?>
 	</p>
 	<p>
-		<?php
+		<  ?php
 		echo("Il y a eu ".$nbAccesCours[0]." lectures sur votre cour.");
 		echo("Il y a eu ".$nbScroll[0]." scroll sur votre cour.");
 		echo("Il y a eu ".$nbScrollBas[0]." scroll jusqu'en bas sur votre cour.");
@@ -278,7 +309,7 @@ echo "<img src='graph6.png' />";
 		?>
 	</p>	
 	<p>
-		<?php
+		< ?php
 		echo("Il y a eu ".$nbAccesCours[0]." lectures sur votre cour.");
 		echo("Il y a eu ".$nbMessages[0]." messages (réponses incluses) postés sur votre cour.");
 		echo("POURCENTAGE DE PARTICIPATION : ".$pourcentageParticipation."%");
@@ -286,7 +317,7 @@ echo "<img src='graph6.png' />";
 		?>
 	</p>
 	<p>
-		<?php
+		<  ?php
 		echo("Il y a eu ".$nbAccesCours[0]." lectures sur votre cour.");
 		echo("Il y a eu ".$nbFichierUpload[0]." fichiers upload sur votre cour.");
 		echo("Il y a eu ".$nbFichierDownload[0]." fichiers download sur votre cour.");
@@ -295,4 +326,6 @@ echo "<img src='graph6.png' />";
 		?>
 	</p>
 </div>
+-->
+
 <?php include("./pieddepage.php"); ?>
