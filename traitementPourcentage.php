@@ -2,7 +2,7 @@
 	// INDICATEUR DE LECTURE
 	if($pourcentageLecture >= 0 && $pourcentageLecture < 40)
 	{
-		$indicateurLecture = "rouge";
+		$indicateurLecture = "red";
 	}
 	else
 	{
@@ -12,14 +12,14 @@
 		}
 		else
 		{
-			$indicateurLecture = "vert";
+			$indicateurLecture = "green";
 		}
 	}
 	
 	// INDICATEUR DE PARTICIPATION
 	if($pourcentageParticipation >= 0 && $pourcentageParticipation < 40)
 	{
-		$indicateurParticipation = "rouge";
+		$indicateurParticipation = "red";
 	}
 	else
 	{
@@ -29,14 +29,14 @@
 		}
 		else
 		{
-			$indicateurParticipation = "vert";
+			$indicateurParticipation = "green";
 		}
 	}
 	
 	// INDICATEUR DE COMPLÉMENT
 	if($pourcentageComplement >= 0 && $pourcentageComplement < 40)
 	{
-		$indicateurComplement = "rouge";
+		$indicateurComplement = "red";
 	}
 	else
 	{
@@ -46,7 +46,7 @@
 		}
 		else
 		{
-			$indicateurComplement = "vert";
+			$indicateurComplement = "green";
 		}
 	}
 ?>

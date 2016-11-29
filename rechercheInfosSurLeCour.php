@@ -7,7 +7,7 @@ $req->execute(array());
 $nbAccesCours = $req->fetch();
 $req->closeCursor();
 // Nombre de messages sur un cour
-$req2 = $bdd->query("SELECT COUNT(*) FROM transition WHERE Attribut LIKE '%".$_POST['listeCours']."%' AND Titre = 'Poster un nouveau message' OR Titre = 'Répondre à un message'");
+$req2 = $bdd->query("SELECT COUNT(*) FROM transition WHERE Attribut LIKE '%".$_POST['listeCours']."%' AND (Titre = 'Poster un nouveau message' OR Titre = 'Répondre à un message')");
 $req2->execute(array());
 $nbMessages = $req2->fetch();
 $req2->closeCursor();

@@ -15,7 +15,7 @@
 	
 	// POURCENTAGE DE COMPLÉMENT DU COURS
 	if($nbAccesCours[0] != 0)
-		$pourcentageComplément = (($nbFichierDownload[0] * 100 / $nbFichierUpload[0]) * 100) / $nbAccesCours[0];
+		$pourcentageComplement = (($nbFichierDownload[0] * 100 / $nbFichierUpload[0]) * 100) / $nbAccesCours[0];
 	else
-		$pourcentageComplément = 0;
+		$pourcentageComplement = 0;
 ?>
