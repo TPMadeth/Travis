@@ -1,6 +1,6 @@
 <!-- Pied de page du site -->
 		<div id="piedpage">
-			Site développé par Raphaël Turquet et Olivier Prime. Tout droit réservé ©®™
+			Cette partie du site a été développée par Raphaël Turquet. Tous droits réservés ©®™
 		</div>
 	</body>
 </html>

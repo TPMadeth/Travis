@@ -1,18 +1,16 @@
-<?php include("./entete.php"); ?>
+<?php 
+include("./entete.php"); 
+?>
 <!-- Page d'accueil du site -->
 			<p>
-				Sur ce site, vous pourrez visualiser l'appréciation de vos cours par vos élèves.
-				</br>
-				Cet indicateur est calculé à partir de plusieurs sous indicateurs : 
-				</br>
-					- Un indicateur de lecture du cours, pour savoir si votre cours a été lu jusqu'au bout.
-				</br>
-					- Un indicateur de participation, pour savoir si vos élèves ont postés beaucoup de messages ou non sur le cours.
-				</br>
-					- Un indicateur de complément, qui s'intéresse au nombre de fichiers postés sur votre cours et le nombre effectif de téléchargement de ceux-ci.
+				<form method="POST" action="scriptTransfertBDD.php">
+					<input type="submit" name="Ok" value="Remplir la BDD" >
+				</form>
 			</p>
 			<p>
-				<?php include("./rechercheListeDesCours.php"); ?>
+				<form method="POST" action="affichageIndicateur.php">
+					<input type="submit" name="Ok" value="Afficher un indicateur" >
+				</form>
 			</p>
 		</div>
 <?php include("./pieddepage.php"); ?>

@@ -5,9 +5,9 @@
 		<div id="entete">
 			<link rel="stylesheet"href="css.css"/>
 			<meta charset="utf-8">
-			<title> Projet Travis </title>
+			<title> Projet Personnel </title>
 			<h1> Analyse de données hétérogènes </h1>
-			<h2> Projet Travis </h2>
+			<h2> Projet Personnel - Raphaël </h2>
 		</div>
 	</head>
 	
