@@ -1,0 +1,18 @@
+﻿Ouvrir la console Git Bash :
+	- Va dans le dossier de ton projet où se trouve le dossier .git
+	- Clic droit sur la fenêtre -> Git Bash Here
+
+Créer le premier projet :
+	- Va à l'endrois où tu veuts créer ton projet
+	- Ouvre la console Git Bash
+	- git clone git@bitbucket.org:mangertracer/manger-tracer.git
+
+Importer ton code sur Bitbucket
+	- Ouvre la console Git Bash
+	- git add .			// Permet d'ajouter tes dernières modifs au commit
+	- git commit -m "ton message"	// Met un message pour expliquer tes modifs
+	- git pull			// Récupérer les dernières modifs de Bitbucket
+	- git push			// Push ton code sur Bitbucket
+
+Problèmes possibles :
+	- Compliqué à expliquer sans exemple :p
