@@ -15,7 +15,11 @@
 		<!-- Menu du site -->
 		<div id="menu">
 				<p>
-					<a href="index.php">Accueil</a>
+				<ul>
+					<li><a href="/Travis/index.php">Accueil</a></li>
+					<li><a href="/Travis/Projet Raphael/index.php">Projet Raphaël</a></li>
+					<li><a href="/Travis/Projet Olivier/index.php">Projet Olivier</a></li>
+				</ul>
 				<p>
 		</div>
 		

@@ -13,7 +13,7 @@ div#entete{
 
 div#contenu {
 	width:80%;
-	height:80%;
+	min-height:80%;
 	background-color:#FFFFFF;
 	text-align: center;
 	color:#000000;
@@ -25,7 +25,7 @@ div#contenu {
 div#menu{
 	float:left;
 	width:10%;
-	height:80%;
+	min-height:80%;
 	background-color:#FFFFFF;
 	text-align: center;
 	color:#000000;

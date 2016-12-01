@@ -20,14 +20,14 @@
 	}
 	
 	// INDICATEUR DE PARTICIPATION
-	if($pourcentageParticipation >= 0 && $pourcentageParticipation < 40)
+	if($pourcentageParticipation >= 0 && $pourcentageParticipation < 20)
 	{
 		$indicateurParticipation = "red";
 		$y=1;
 	}
 	else
 	{
-		if($pourcentageParticipation >= 40 && $pourcentageParticipation < 60)
+		if($pourcentageParticipation >= 20 && $pourcentageParticipation < 60)
 		{
 			$indicateurParticipation = "orange";
 			$y=5;
