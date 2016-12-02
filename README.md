@@ -7,6 +7,7 @@ Mode d'emploie :
 	- La base de données utilisées est la base traceForum fournie en cours.
 	- Le programme est disponible en téléchargement, via GitHub.
 	- Ne nécessite qu'un interpréteur PhP.
+	- Changez le fichier connexionBDD.php avec vos propres informations de connexion.
 	
 But :
 Le but de ce projet est de proposer un indicateur de suivi d'un forum d'échange entre professeurs et étudiants. Nous avons choisi d'implémenter un indicateur de satisfaction du cours.
