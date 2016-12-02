@@ -8,6 +8,7 @@ Mode d'emploie :
 	- Le programme est disponible en téléchargement, via GitHub.
 	- Ne nécessite qu'un interpréteur PhP.
 	- N'appuyez qu'UNE SEULE FOIS sur le bouton de remplissage de la base de données générique.
+	- Changez le fichier connexionBDD.php avec vos propres informations de connexion.
 	
 But :
 Le but de se projet est de proposer un moteur générique de calcul d'indicateur à partir du modèle CMC.
