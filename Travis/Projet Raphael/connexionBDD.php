@@ -3,6 +3,7 @@
 try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=tracescmc;charset=utf8', 'root', '');
+	$bdd->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
 }
 catch (Exception $e)
 {
@@ -13,6 +14,7 @@ catch (Exception $e)
 try
 {
 	$bdd2 = new PDO('mysql:host=localhost;dbname=traceforum;charset=utf8', 'root', '');
+	$bdd2->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
 }
 catch (Exception $e)
 {

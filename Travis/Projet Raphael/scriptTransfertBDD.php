@@ -1,5 +1,5 @@
 <?php
-	include("./connexionBDD.php"); 
+	include("connexionBDD.php"); 
 	
 	// Remplissage table CMCTool
 	$request = $bdd2->query("SELECT * FROM categorie"); 
@@ -11,7 +11,6 @@
 		$request5->execute(array(
 		'libelle' => $data['Titre']
 		));
-		$request5->closeCursor();
 	}
 	$request->closeCursor();
 	
@@ -26,7 +25,6 @@
 		'libelle' => $data2['Titre'],
 		'idCMCTool' => $data2['IDCat']
 		));
-		$request6->closeCursor();
 	}
 	$request2->closeCursor();
 	
@@ -41,15 +39,12 @@
 		'date' => $data3['date'],
 		'libelle' => $data3['titre']
 		));
-		$request7->closeCursor();
 	}
 	$request3->closeCursor();
 	
 	// Remplissage table Message
 	$request4 = $bdd2->query("SELECT * FROM transition WHERE Titre = 'Poster un nouveau message' OR Titre = 'Répondre à un message'"); 
 	$request4->execute(array());
-	
-	$i = 1;
 	
 	while($data4=$request4->fetch())
 	{
@@ -59,7 +54,6 @@
 		'date' => $data4['date'],
 		'sender' => $data4['titre'],
 		));
-		$request8->closeCursor();
 	}
 	$request4->closeCursor();
 
@@ -74,7 +68,6 @@
 		'title' => $data5['Filenameo'],
 		'attachedFile' => $data5['Filenamer'],
 		));
-		$request9->closeCursor();
 	}
 	$request5->closeCursor();
 ?>

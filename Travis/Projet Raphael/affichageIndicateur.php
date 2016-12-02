@@ -4,22 +4,26 @@ require_once ('../jpgraph/jpgraph_pie.php');
 require_once ('../jpgraph/jpgraph.php');
 require_once ('../jpgraph/jpgraph_bar.php');
 include("./connexionBDD.php"); 
+include("./entete.php"); 
 
-// RÈcupÈration du nombre de messages (rÈponses comprises) postÈs sur le forum
+// R√©cup√©ration du nombre de messages (r√©ponses comprises) post√©s sur le forum
 $request = $bdd->query("SELECT COUNT(*) FROM message"); 
 $request->execute(array());
 $result = $request->fetch();
 $request->closeCursor();
 ?>
 <p>
+	Nombres de messages post√©s sur le forum.
+</p>
+<p>
 <?php
 	// Affichage du graphique
 	// content="text/plain; charset=utf-8"		 
 	//$datay=array($nbConnexion[0],$nbLecture[0],$nbMessages[0],$nbScroll[0],$nbScrollBas[0],$nbFichierUpload[0],$nbFichierDownload[0]);
-	$datay=array($result);
+	$datay=array($result[0]);
 	 
 	// Size of graph
-	$width=350;
+	$width=400;
 	$height=150;
 
 	$barcolors = array('red');
@@ -58,9 +62,10 @@ $request->closeCursor();
 	 
 	$bplot->SetFillColor('red');
 	 
-	 @unlink("graph4.png");
+	 @unlink("graph.png");
 	//$graph->Stroke();
-	$graph->Stroke("graph4.png");
-	echo "<img src='graph4.png' />";
-?>
+	$graph->Stroke("graph.png");
+	echo "<img src='graph.png' />";
+
+include("./pieddepage.php"); ?>
 </p>
