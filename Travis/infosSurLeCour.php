@@ -136,7 +136,7 @@ echo "<img src='graphtotal.png' />";
 			 $datay=array($nbAccesCours[0],$nbScroll[0],$nbScrollBas[0]);
 			 
 			// Size of graph
-			$width=350;
+			$width=400;
 			$height=150;
 
 			$barcolors = array($indicateurLecture);
@@ -192,7 +192,7 @@ echo "<img src='graphtotal.png' />";
 			 $datay=array($nbAccesCours[0],$nbMessages[0]);
 			 
 			// Size of graph
-			$width=350;
+			$width=400;
 			$height=150;
 
 			$barcolors = array($indicateurParticipation);
@@ -245,7 +245,7 @@ echo "<img src='graphtotal.png' />";
 			 $datay=array($nbAccesCours[0],$nbFichierUpload[0],$nbFichierDownload[0]);
 			 
 			// Size of graph
-			$width=350;
+			$width=500;
 			$height=150;
 
 			$barcolors = array($indicateurComplement);
